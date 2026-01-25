@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import static com.restfulApiDev.api.conditions.Conditions.statusCode;
-import static com.restfulApiDev.api.utils.dataGenerator.DataGenerator.getFakerFirstName;
+import static com.restfulApiDev.api.utils.dataGenerator.DataGenerator.*;
 
 public class PostObjectTest {
 
@@ -17,19 +17,24 @@ public class PostObjectTest {
 
     private PostSingleObjectAssert postSingleObjectAssert = new PostSingleObjectAssert();
 
+    private int year = getFakerRandomIntNumberBetween(1970, 2025);
+    private double price = getFakerRandomDoubleNumberBetween(3, 1, 9999);
+    private String CPU_model = randomAlphaNumeric(25);
+    private String Hard_disk_size = randomAlphaNumeric(25);
+
 
     @Test
-    public void addSingleObject(){
+    public void addSingleObject() {
 
         String FakerName = getFakerFirstName();
 
         PostSingleObjectRequestModel postSingleObjectRequestModel = new PostSingleObjectRequestModel()
                 .setName(FakerName)
-                        .setData(new DataRequestModel()
-                        .setYear(2001)
-                        .setPrice(123)
-                        .setCPU_model("safas asfasf asfa ")
-                        .setHard_disk_size("123 fgjfj"));
+                .setData(new DataRequestModel()
+                        .setYear(year)
+                        .setPrice(price)
+                        .setCPU_model(CPU_model)
+                        .setHard_disk_size(Hard_disk_size));
 
 
         PostSingleObjectResponseModel postSingleObjectResponseModel = objectControllerService
@@ -51,7 +56,7 @@ public class PostObjectTest {
     }
 
     @Test
-    public void addSingleObjectWithRandomizerInModel(){
+    public void addSingleObjectWithRandomizerInModel() {
 
         String FakerName = getFakerFirstName();
 

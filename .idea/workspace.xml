@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a46819f-b44e-4726-9f28-46f5091728bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/AssertableResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/asserts/postSingleObjectAssert/PostSingleObjectAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/conditions/BodyFieldCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/conditions/Condition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/conditions/Conditions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/conditions/ContentTypeCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/conditions/StatusCodeCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/models/postSingleObjectModel/request/DataRequestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/models/postSingleObjectModel/request/PostSingleObjectRequestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/models/postSingleObjectModel/response/DataResponseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/models/postSingleObjectModel/response/PostSingleObjectResponseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/properties/BaseUrlLinks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/services/SetupApiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/services/objectControllerServices/ObjectControllerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/restfulApiDev/api/utils/dataGenerator/DataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/PostObjectTest.java" afterDir="false" />
+    <list default="true" id="8a46819f-b44e-4726-9f28-46f5091728bb" name="Changes" comment="PostSingleObject Test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/PostObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/PostObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +41,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -68,7 +49,24 @@
       <recent name="com.restfulApiDev.api.conditions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostObjectTest.addSingleObjectWithRandomizerInModel">
+  <component name="RunManager" selected="TestNG.PostObjectTest">
+    <configuration name="PostObjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PetProjectRestfulApiDev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restfulApiDev.api.singleObjectController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restfulApiDev.api.singleObjectController" />
+      <option name="MAIN_CLASS_NAME" value="com.restfulApiDev.api.singleObjectController.PostObjectTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostObjectTest.addSingleObject" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PetProjectRestfulApiDev" />
       <extension name="coverage">
@@ -107,8 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PostObjectTest.addSingleObjectWithRandomizerInModel" />
+        <item itemvalue="TestNG.PostObjectTest" />
         <item itemvalue="TestNG.PostObjectTest.addSingleObject" />
+        <item itemvalue="TestNG.PostObjectTest.addSingleObjectWithRandomizerInModel" />
       </list>
     </recent_temporary>
   </component>
@@ -121,6 +120,14 @@
       <option name="presentableId" value="Default" />
       <updated>1764712373409</updated>
     </task>
+    <task id="LOCAL-00001" summary="PostSingleObject Test">
+      <created>1765579592087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765579592087</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,5 +140,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PostSingleObject Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="PostSingleObject Test" />
   </component>
 </project>
