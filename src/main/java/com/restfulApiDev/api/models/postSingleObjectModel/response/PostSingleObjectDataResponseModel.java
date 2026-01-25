@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
 @Setter
 @ToString
 @Accessors(chain = true)
-public class DataResponseModel {
+public class PostSingleObjectDataResponseModel {
 
     @JsonProperty("year")
     private int year;
@@ -25,6 +25,5 @@ public class DataResponseModel {
 
     @JsonProperty("Hard disk size")
     private String Hard_disk_size;
-
 
 }

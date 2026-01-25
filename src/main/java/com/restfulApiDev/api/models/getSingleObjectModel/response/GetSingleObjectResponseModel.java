@@ -1,4 +1,4 @@
-package com.restfulApiDev.api.models.postSingleObjectModel.request;
+package com.restfulApiDev.api.models.getSingleObjectModel.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
@@ -12,13 +12,15 @@ import lombok.experimental.Accessors;
 @Setter
 @ToString
 @Accessors(chain = true)
-public class PostSingleObjectRequestModel {
+public class GetSingleObjectResponseModel {
 
-    @JsonProperty("data")
-    private PostSingleObjectDataRequestModel data;
+	@JsonProperty("data")
+	private GetSingleObjectDataResponseModel data;
 
-    @JsonProperty("name")
-    private String name;
+	@JsonProperty("name")
+	private String name;
 
+	@JsonProperty("id")
+	private String id;
 
 }

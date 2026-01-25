@@ -14,7 +14,7 @@ import static com.restfulApiDev.api.utils.dataGenerator.DataGenerator.*;
 @Setter
 @ToString
 @Accessors(chain = true)
-public class DataRequestModel {
+public class PostSingleObjectDataRequestModel {
 
     @JsonProperty("year")
     private int year;
@@ -28,7 +28,7 @@ public class DataRequestModel {
     @JsonProperty("Hard disk size")
     private String Hard_disk_size;
 
-    public DataRequestModel randomize(){
+    public PostSingleObjectDataRequestModel randomize(){
         this.year = getFakerRandomIntNumberBetween(1970, 2025);
         this.price = getFakerRandomDoubleNumberBetween(3, 1, 9999);
         this.CPU_model = randomAlphaNumeric(25);

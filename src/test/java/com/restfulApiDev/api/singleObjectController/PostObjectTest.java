@@ -1,7 +1,7 @@
 package com.restfulApiDev.api.singleObjectController;
 
 import com.restfulApiDev.api.asserts.postSingleObjectAssert.PostSingleObjectAssert;
-import com.restfulApiDev.api.models.postSingleObjectModel.request.DataRequestModel;
+import com.restfulApiDev.api.models.postSingleObjectModel.request.PostSingleObjectDataRequestModel;
 import com.restfulApiDev.api.models.postSingleObjectModel.request.PostSingleObjectRequestModel;
 import com.restfulApiDev.api.models.postSingleObjectModel.response.PostSingleObjectResponseModel;
 import com.restfulApiDev.api.services.objectControllerServices.ObjectControllerService;
@@ -30,7 +30,7 @@ public class PostObjectTest {
 
         PostSingleObjectRequestModel postSingleObjectRequestModel = new PostSingleObjectRequestModel()
                 .setName(FakerName)
-                .setData(new DataRequestModel()
+                .setData(new PostSingleObjectDataRequestModel()
                         .setYear(year)
                         .setPrice(price)
                         .setCPU_model(CPU_model)
@@ -62,7 +62,7 @@ public class PostObjectTest {
 
         PostSingleObjectRequestModel postSingleObjectRequestModel = new PostSingleObjectRequestModel()
                 .setName(FakerName)
-                .setData(new DataRequestModel().randomize());
+                .setData(new PostSingleObjectDataRequestModel().randomize());
 
 
         PostSingleObjectResponseModel postSingleObjectResponseModel = objectControllerService

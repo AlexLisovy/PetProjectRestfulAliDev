@@ -18,7 +18,7 @@ public class PostSingleObjectResponseModel {
     private String createdAt;
 
     @JsonProperty("data")
-    private DataResponseModel data;
+    private PostSingleObjectDataResponseModel data;
 
     @JsonProperty("name")
     private String name;
