@@ -1,13 +1,17 @@
 package com.restfulApiDev.api.singleObjectController;
 
+import com.restfulApiDev.api.models.getSingleObjectModel.response.GetSingleObjectDataResponseModel;
 import com.restfulApiDev.api.models.getSingleObjectModel.response.GetSingleObjectResponseModel;
 import com.restfulApiDev.api.models.postSingleObjectModel.request.PostSingleObjectDataRequestModel;
 import com.restfulApiDev.api.models.postSingleObjectModel.request.PostSingleObjectRequestModel;
 import com.restfulApiDev.api.models.postSingleObjectModel.response.PostSingleObjectResponseModel;
 import com.restfulApiDev.api.services.objectControllerServices.ObjectControllerService;
+import com.restfulApiDev.api.steps.ObjectSteps;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import javax.swing.*;
 
 import static com.restfulApiDev.api.conditions.Conditions.statusCode;
 import static com.restfulApiDev.api.utils.dataGenerator.DataGenerator.getFakerFirstName;
@@ -18,6 +22,10 @@ public class GetSingleObjectTest {
 
     private ObjectControllerService objectControllerService = new ObjectControllerService();
 
+    private ObjectSteps objectSteps = new ObjectSteps();
+
+    private PostSingleObjectResponseModel objectId;
+
     private PostSingleObjectRequestModel postSingleObjectRequestModel;
     private PostSingleObjectResponseModel postSingleObjectResponseModel;
 
@@ -26,7 +34,10 @@ public class GetSingleObjectTest {
     @BeforeClass
     private void preConditions() {
 
-        // TODO Make this as a STEP ------------------------------------------------------------------------------------
+        // Create object step
+        objectId = objectSteps.postSingleObject();
+
+        // Create object request
         String FakerName = getFakerFirstName();
 
         postSingleObjectRequestModel = new PostSingleObjectRequestModel()
@@ -38,7 +49,6 @@ public class GetSingleObjectTest {
                 .postObject(postSingleObjectRequestModel)
                 .shouldHave(statusCode(200))
                 .responseAs(PostSingleObjectResponseModel.class);
-        // -------------------------------------------------------------------------------------------------------------
     }
 
     @Test
@@ -52,9 +62,27 @@ public class GetSingleObjectTest {
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(postSingleObjectRequestModel.getName(), getSingleObjectResponseModel.getName());
+        softAssert.assertEquals(postSingleObjectResponseModel.getData().getPrice(), getSingleObjectResponseModel.getData().getPrice());
 
         softAssert.assertAll();
 
+    }
+
+    @Test
+    public void getSingleObjectByIdWithStep() {
+
+        GetSingleObjectResponseModel getSingleObjectResponseModel = objectControllerService
+                .getObject(objectId.getId())
+                .shouldHave(statusCode(200))
+                .responseAs(GetSingleObjectResponseModel.class);
+
+        SoftAssert softAssert = new SoftAssert();
+
+        softAssert.assertEquals(objectId.getName(), getSingleObjectResponseModel.getName());
+        softAssert.assertEquals(objectId.getData().getPrice(), getSingleObjectResponseModel.getData().getPrice());
+
+        softAssert.assertAll();
 
     }
+
 }
