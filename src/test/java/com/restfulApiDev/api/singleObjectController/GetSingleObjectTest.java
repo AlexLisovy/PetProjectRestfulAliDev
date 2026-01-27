@@ -13,8 +13,9 @@ import org.testng.asserts.SoftAssert;
 
 import javax.swing.*;
 
-import static com.restfulApiDev.api.conditions.Conditions.statusCode;
+import static com.restfulApiDev.api.conditions.Conditions.*;
 import static com.restfulApiDev.api.utils.dataGenerator.DataGenerator.getFakerFirstName;
+import static org.hamcrest.Matchers.containsString;
 
 public class GetSingleObjectTest {
 
@@ -82,6 +83,20 @@ public class GetSingleObjectTest {
         softAssert.assertEquals(objectId.getData().getPrice(), getSingleObjectResponseModel.getData().getPrice());
 
         softAssert.assertAll();
+
+    }
+
+    @Test
+    public void getSingleObjectByNonExistId() {
+
+        String nonExistObjectId = "0";
+
+        objectControllerService
+                .getObject(nonExistObjectId)
+                .shouldHave(statusCode(404),
+                bodyField("error", containsString("Oject with id="+ nonExistObjectId +" was not found.")));
+
+
 
     }
 
