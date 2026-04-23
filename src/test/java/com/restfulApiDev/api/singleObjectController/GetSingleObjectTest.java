@@ -22,6 +22,7 @@ public class GetSingleObjectTest {
     // Comment for test
     // second comment
     // third comment
+    // fourth comment
 
 
     private ObjectControllerService objectControllerService = new ObjectControllerService();
