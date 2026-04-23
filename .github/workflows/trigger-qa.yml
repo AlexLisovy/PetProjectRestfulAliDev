@@ -17,7 +17,7 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.QA_REPO_TOKEN }}" \
             https://api.github.com/repos/AlexLisovy/MegaportAssesment/actions/workflows/run-tests.yml/dispatches \
             -d '{
-              "ref": "main",
+              "ref": "master",
               "inputs": {
                 "source_repo": "${{ github.repository }}",
                 "source_branch": "${{ github.ref_name }}",
