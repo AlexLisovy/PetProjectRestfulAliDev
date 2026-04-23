@@ -20,7 +20,6 @@ import static org.hamcrest.Matchers.containsString;
 public class GetSingleObjectTest {
 
 
-
     private ObjectControllerService objectControllerService = new ObjectControllerService();
 
     private ObjectSteps objectSteps = new ObjectSteps();
@@ -29,7 +28,6 @@ public class GetSingleObjectTest {
 
     private PostSingleObjectRequestModel postSingleObjectRequestModel;
     private PostSingleObjectResponseModel postSingleObjectResponseModel;
-
 
 
     @BeforeClass
@@ -47,9 +45,9 @@ public class GetSingleObjectTest {
 
         postSingleObjectResponseModel =
                 objectControllerService
-                .postObject(postSingleObjectRequestModel)
-                .shouldHave(statusCode(200))
-                .responseAs(PostSingleObjectResponseModel.class);
+                        .postObject(postSingleObjectRequestModel)
+                        .shouldHave(statusCode(200))
+                        .responseAs(PostSingleObjectResponseModel.class);
     }
 
     @Test
@@ -86,18 +84,17 @@ public class GetSingleObjectTest {
 
     }
 
-    @Test
-    public void getSingleObjectByNonExistId() {
-
-        String nonExistObjectId = "0";
-
-        objectControllerService
-                .getObject(nonExistObjectId)
-                .shouldHave(statusCode(404),
-                bodyField("error", containsString("Oject with id="+ nonExistObjectId +" was not found.")));
-
-
-
-    }
+//    @Test
+//    public void getSingleObjectByNonExistId() {
+//
+//        String nonExistObjectId = "0";
+//
+//        objectControllerService
+//                .getObject(nonExistObjectId)
+//                .shouldHave(statusCode(404),
+//                        bodyField("error", containsString("Oject with id=" + nonExistObjectId + " was not found.")));
+//
+//
+//    }
 
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a46819f-b44e-4726-9f28-46f5091728bb" name="Changes" comment="GetSingleObject Tests final">
+    <list default="true" id="8a46819f-b44e-4726-9f28-46f5091728bb" name="Changes" comment="GetSingleObject Tests negative cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/GetSingleObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/GetSingleObjectTest.java" afterDir="false" />
     </list>
@@ -41,7 +41,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -49,7 +49,20 @@
       <recent name="com.restfulApiDev.api.conditions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GetSingleObjectTest.getSingleObjectByNonExistId">
+  <component name="RunManager" selected="TestNG.com.restfulApiDev.api.singleObjectController">
+    <configuration name="TrainingSimpleTasks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.restfulApiDev.api.singleObjectController.TrainingSimpleTasks" />
+      <module name="PetProjectRestfulApiDev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restfulApiDev.api.singleObjectController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetSingleObjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PetProjectRestfulApiDev" />
       <extension name="coverage">
@@ -67,24 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetSingleObjectTest.getSingleObjectById" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PetProjectRestfulApiDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.restfulApiDev.api.singleObjectController.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.restfulApiDev.api.singleObjectController" />
-      <option name="MAIN_CLASS_NAME" value="com.restfulApiDev.api.singleObjectController.GetSingleObjectTest" />
-      <option name="METHOD_NAME" value="getSingleObjectById" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GetSingleObjectTest.getSingleObjectByIdAndData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PetProjectRestfulApiDev" />
       <extension name="coverage">
@@ -96,24 +91,6 @@
       <option name="PACKAGE_NAME" value="com.restfulApiDev.api.singleObjectController" />
       <option name="MAIN_CLASS_NAME" value="com.restfulApiDev.api.singleObjectController.GetSingleObjectTest" />
       <option name="METHOD_NAME" value="getSingleObjectByIdAndData" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetSingleObjectTest.getSingleObjectByIdWithStep" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PetProjectRestfulApiDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.restfulApiDev.api.singleObjectController.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.restfulApiDev.api.singleObjectController" />
-      <option name="MAIN_CLASS_NAME" value="com.restfulApiDev.api.singleObjectController.GetSingleObjectTest" />
-      <option name="METHOD_NAME" value="getSingleObjectByIdWithStep" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,13 +116,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.restfulApiDev.api.singleObjectController" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PetProjectRestfulApiDev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restfulApiDev.api.singleObjectController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restfulApiDev.api.singleObjectController" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.com.restfulApiDev.api.singleObjectController" />
+        <item itemvalue="Application.TrainingSimpleTasks" />
+        <item itemvalue="TestNG.GetSingleObjectTest" />
         <item itemvalue="TestNG.GetSingleObjectTest.getSingleObjectByNonExistId" />
         <item itemvalue="TestNG.GetSingleObjectTest.getSingleObjectByIdAndData" />
-        <item itemvalue="TestNG.GetSingleObjectTest.getSingleObjectById" />
-        <item itemvalue="TestNG.GetSingleObjectTest" />
-        <item itemvalue="TestNG.GetSingleObjectTest.getSingleObjectByIdWithStep" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769545409893</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="GetSingleObject Tests negative cases">
+      <created>1769546141132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769546141132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +205,7 @@
     <MESSAGE value="Added variables to PostSingleObject Test" />
     <MESSAGE value="Initialization and first test for GetSingleObject" />
     <MESSAGE value="GetSingleObject Tests final" />
-    <option name="LAST_COMMIT_MESSAGE" value="GetSingleObject Tests final" />
+    <MESSAGE value="GetSingleObject Tests negative cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="GetSingleObject Tests negative cases" />
   </component>
 </project>
