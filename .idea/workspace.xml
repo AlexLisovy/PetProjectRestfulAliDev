@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a46819f-b44e-4726-9f28-46f5091728bb" name="Changes" comment="Turn off negative case">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8a46819f-b44e-4726-9f28-46f5091728bb" name="Changes" comment="Added comment for test">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/GetSingleObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/restfulApiDev/api/singleObjectController/GetSingleObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1776967468852</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added comment for test">
+      <created>1776970149368</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776970149368</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +220,7 @@
     <MESSAGE value="GetSingleObject Tests final" />
     <MESSAGE value="GetSingleObject Tests negative cases" />
     <MESSAGE value="Turn off negative case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Turn off negative case" />
+    <MESSAGE value="Added comment for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comment for test" />
   </component>
 </project>

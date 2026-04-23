@@ -20,6 +20,7 @@ import static org.hamcrest.Matchers.containsString;
 public class GetSingleObjectTest {
 
     // Comment for test
+    // second comment
 
 
     private ObjectControllerService objectControllerService = new ObjectControllerService();
