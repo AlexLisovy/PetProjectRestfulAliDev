@@ -1,9 +1,8 @@
-name: Trigger QA repo after merge
+name: Trigger QA tests after push to master
 
 on:
   push:
     branches:
-      - main
       - master
 
 jobs:
@@ -11,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger QA workflow
+      - name: Trigger QA workflow in MegaportAssesment
         run: |
           curl -L -X POST \
             -H "Accept: application/vnd.github+json" \
@@ -20,7 +19,8 @@ jobs:
             -d '{
               "ref": "main",
               "inputs": {
-                "source_sha": "${{ github.sha }}",
-                "source_branch": "${{ github.ref_name }}"
+                "source_repo": "${{ github.repository }}",
+                "source_branch": "${{ github.ref_name }}",
+                "source_sha": "${{ github.sha }}"
               }
             }'
